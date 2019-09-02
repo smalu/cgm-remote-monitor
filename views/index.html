@@ -115,7 +115,7 @@
     		</div>
     	</div>
         <div class="container loading" id="container">
-            <div id="toolbar">
+            <div id="toolbar" style="display:none">
                 <div id="buttonbar" style="margin-right: 0px;" role="navigation" aria-label="Menu" >
                     <a id="editbutton" class="tip" original-title="Edit Mode" aria-label="Edit Mode" href="#" style="display:none;"><i class="icon-edit"></i></a>
                     <a id="testAlarms" class="tip" original-title="Alarm Test / Smartphone Enable" aria-label="Alarm Test / Smartphone Enable" href="#"><i class="icon-volume"></i></a>
@@ -130,7 +130,7 @@
                 <a href="#"  aria-label="cancel" ><span></span><i class="icon-cancel-circled"></i></a>
             </div>
             <div class="primary" >
-                <div class="bgStatus current">
+                <div class="bgStatus current" style="float:inherit">
                     <div class="bgButton" aria-live="assertive" role="contentinfo" aria-label="Blood Sugar">
                         <span class="bgSpan">
                           <span class="pill rawbg hidden"><em></em><label></label></span>
@@ -140,17 +140,17 @@
                     </div>
                     <ul class="dropdown-menu" id="silenceBtn"></ul>
                     <div class="majorPills"></div>
-                    <div class="minorPills"></div>
+                    <div class="minorPills" style="display:none"></div>
                 </div>
 
-                <div class="status">
+                <div class="status" style="display:none;">
                     <div class="statusBox">
                         <div id="currentTime">---</div>
                         <div class="statusPills">
                         </div>
                     </div>
                 </div>
-                <ul class="focus-range">
+                <ul class="focus-range" style="display:none;">
                     <li data-hours="2" class="translate">2HR</li>
                     <li data-hours="3" class="translate">3HR</li>
                     <li data-hours="6" class="translate">6HR</li>
@@ -160,9 +160,7 @@
                 </ul>
                 <ul class="dropdown-menu" id="viewMenu"></ul>
             </div>
-            <div class="row-fluid section1">
-                <div id="chartContainer" role="region" aria-label="Chart"></div>
-            </div>
+   
         </div>
 
         <div id="drawer">
